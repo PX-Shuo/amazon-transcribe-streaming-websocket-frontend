@@ -80,7 +80,7 @@ const Recorder = () => {
     })
     micStream.setStream(userMediaStream)
 
-    const preSignedURL = await axios.post('https://api.transcribestreamingapp.store/', {
+    const preSignedURL = await axios.post('https://api.transcribestreamingapp.store/api/transcribe', {
       sampleR: sampleRate
     })
     console.log(preSignedURL.data)
